@@ -1,0 +1,22 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <Import Project="..\..\common.props" />
+
+  <PropertyGroup>
+    <TargetFramework>net7.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <RootNamespace>HQSOFT.eBiz.Inventor</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.NET.Test.Sdk" Version="17.2.0" />
+    <PackageReference Include="Microsoft.Data.Sqlite" Version="7.0.0" />
+    <PackageReference Include="Volo.Abp.EntityFrameworkCore.Sqlite" Version="7.2.3" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\src\HQSOFT.eBiz.Inventor.EntityFrameworkCore\HQSOFT.eBiz.Inventor.EntityFrameworkCore.csproj" />
+    <ProjectReference Include="..\HQSOFT.eBiz.Inventor.TestBase\HQSOFT.eBiz.Inventor.TestBase.csproj" />
+  </ItemGroup>
+
+</Project>
